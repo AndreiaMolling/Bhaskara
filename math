@@ -1,0 +1,21 @@
+import math 
+
+a= float(input("valor do coeficiente a, maior que zero"))
+b= float(input("valor do coeficiente b"))
+c= int(input("valor do coeficiente c"))
+
+delta = (b**2) -4*a*c
+if a  == 0:
+    print("Não é equação de segundo grau")
+    
+elif delta > 0:
+    R1 = (-b + math.sqrt(delta))/(2*a)
+    R2 = (-b - math.sqrt(delta))/(2*a)
+    print("Os valores das raízes são:", R1, R2)
+    
+elif delta == 0:
+    R= (-b + math.sqrt(delta))/(2*a)
+    print("O valor da raíz única é,", R)
+    
+elif delta <0:
+    print("Não existem raízes reais")
